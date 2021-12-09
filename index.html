@@ -3,89 +3,82 @@
     <head>
         <title>Lilas Ikuta</title>
         <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="store.html">STORE</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>幾田りら</h1>
-            <button type="button">ボタン</button>
-            <br>
-            <br>
-            <img src="Images/Lilas.jpeg">
-            <button type="button">&#9658</button>
+            <h1 class="artist-name artist-name-large">幾田りら</h1>
+            <div class="container">
+                <button class="btn btn-header" type="button">新品のアルバムを買う！</button>
+            </div>
+            <button class="btn btn-header btn-play" type="button">&#9658</button>
         </header>
-        <section>
-            <h2>新曲リリース</h2>
+        <section class="content-section container">
+            <h2 class="section-header">新曲リリース</h2>
             <div>
-                <div>
-                    <strong>「0X1=LOVESONG (I Know I Love You) feat. 幾田りら [Japanese Ver.]」</strong>
-                    &lt;&gt;
-                    <span>2021年12月1日（水）</span>
-                    &lt;&gt;
+                <div class="release-row">
+                    <span class="release-item release-date">2021年12月1日（水）</span>
+                    <span class="release-item release-title">「0X1=LOVESONG (I Know I Love You) feat. 幾田りら [Japanese Ver.]」</span>
                     <a href="https://txt.lnk.to/chaoticID" target="_blank">
-                        <button type="button">聴く</button>
+                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
                     </a>
                 </div>
-                <hr>
-                <div>
-                    <strong>「ロマンスの約束」リアレンジVer.</strong>
-                    &lt;&gt;
-                    <span>2021年8月14日（土）</span>
-                    &lt;&gt;
+                <div class="release-row">
+                    <span class="release-item release-date">2021年8月14日（土）</span>
+                    <span class="release-item release-title">「ロマンスの約束」リアレンジVer.</span>
                     <a href="https://orcd.co/romance_no_yakusoku" target="_blank">
-                        <button type="button">聴く</button>
+                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
                     </a>
                 </div>
-                <hr>
-                <div>
-                    <strong>「SWEET MEMORIES」</strong>
-                    &lt;&gt;
-                    <span>2021年7月14日（水）</span>
-                    &lt;&gt;
+                <div class="release-row">
+                    <span class="release-item release-date">2021年7月14日（水）</span>
+                    <span class="release-item release-title">「SWEET MEMORIES」</span>
                     <a href="https://t.co/3I73Q0hzPx" target="_blank">
-                        <button type="button">聴く</button>
+                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
                     </a>
                 </div>
-                <hr>
-                <div>
-                    <strong>「Answer」</strong>
-                    &lt;&gt;
-                    <span>2021年3月9日（火）</span>
-                    &lt;&gt;
+                <div class="release-row">
+                    <span class="release-item release-date">2021年3月9日（火）</span>
+                    <span class="release-item release-title">「Answer」</span>
                     <a href="https://orcd.co/answer" target="_blank">
-                        <button type="button">聴く</button>
+                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
                     </a>
                 </div>
             </div>
         </section>
-        <footer></h3>
-            <li>
-                <a href="https://open.spotify.com/artist/1qM11R4ylJyQiPJ0DffE9z" target="_blank">
-                    <img src='Images/Spotify_icon.png' width="50">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/channel/UCztEY6czNyJKjRWMwuur9bg" target="_blank">
-                    <img src='Images/Youtube_icon.png' width="50">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/ikutalilas" target="_blank">
-                    <img src='Images/Twitter_icon.png' width="50">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/lilasikuta/" target="_blank">
-                    <img src='Images/Instagram_icon.png' width="50">
-                </a>
-            </li>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="artist-name">幾田りら</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://open.spotify.com/artist/1qM11R4ylJyQiPJ0DffE9z" target="_blank">
+                            <img src='Images/Spotify_icon.png'>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCztEY6czNyJKjRWMwuur9bg" target="_blank">
+                            <img src='Images/Youtube_icon.png'>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ikutalilas" target="_blank">
+                            <img src='Images/Twitter_icon.png'>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/lilasikuta/" target="_blank">
+                            <img src='Images/Instagram_icon.png'>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/grow-studio" title="Grow studio">Grow studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
     </body>
