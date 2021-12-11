@@ -6,110 +6,110 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="store.html">STORE</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>幾田りら</h1>
+            <h1 class="artist-name artist-name-large">幾田りら</h1>
         </header>
-        <section>
-            <h2>MUSIC</h2>
-            <div>
-                <div>
-                    <strong>Jukebox</strong>
+        <section class="container content-section">
+            <h2 class="section-header">アルバム</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Jukebox</span>
+                    <img class="shop-item-image" src="Images/Jukebox.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$17.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <img src="Images/Jukebox.jpeg" width="400">
-                <div>
-                    <span>$17.99</span>
-                    <button role="button">ADD TO CART</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">Answer</span>
+                    <img class="shop-item-image" src="Images/Answer.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <div>
-                    <strong>Answer</strong>
+                <div class="shop-item">
+                    <span class="shop-item-title">Rerise</span>
+                    <img class="shop-item-image" src="Images/Rerise.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$15.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <img src="Images/Answer.jpeg" width="400">
-                <div>
-                    <span>$9.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-                <div>
-                    <strong>Rerise</strong>
-                </div>
-                <img src="Images/Rerise.jpeg" width="400">
-                <div>
-                    <span>$15.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-                <div>
-                    <strong>フリージア</strong>
-                </div>
-                <img src="Images/Freesia.jpeg" width="400">
-                <div>
-                    <span>$9.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>MERCH</h2>
-            <div>
-                <div>
-                    <strong>T-シャツ</strong>
-                </div>
-                <img src="Images/T-shirt.jpeg" width="400">
-                <div>
-                    <span>$19.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-                <div>
-                    <strong>タオル</strong>
-                </div>
-                <img src="Images/Towel.jpeg" width="400">
-                <div>
-                    <span>$12.99</span>
-                    <button role="button">ADD TO CART</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">フリージア</span>
+                    <img class="shop-item-image" src="Images/Freesia.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2>CART</h2>
-            <div>
-                <strong>ITEM</strong>
-                &lt;&gt;
-                <strong>PRICE</strong>
-                &lt;&gt;
-                <strong>QUANTITY</strong>
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-シャツ</span>
+                    <img class="shop-item-image" src="Images/T-shirt.jpeg">
+                    <div class="shop-item-details">
+                        <span  class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">タオル</span>
+                    <img class="shop-item-image" src="Images/Towel.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="Images/Answer.jpeg" width="100">
-                <span>Answer</span>
-                &lt;&gt;
-                <span>$9.99</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                <button role="button">REMOVE</button>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-            <div>
-                <img src="Images/T-shirt.jpeg" width="100">
-                <span>T-シャツ</span>
-                &lt;&gt;
-                <span>$19.99</span>
-                &lt;&gt;
-                <input type="number" value="2">
-                <button role="button">REMOVE</button>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/Answer.jpeg">
+                        <span class="cart-item-title">Answer</span>
+                    </div>
+                    <span class="cart-price cart-column">$9.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" role="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/T-shirt.jpeg">
+                        <span class="cart-item-title">T-シャツ</span>
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" role="button">REMOVE</button>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div>
-                <strong>Total</strong>
-                <span>$49.97</span>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$49.97</span>
             </div>
-            <div>
-                <button role="button">PURCHASE</button>
-            </div>
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">
