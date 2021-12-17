@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lilas Ikuta | Gallery</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css">
+        <script src="gallery.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">について</a></li>
+                    <li><a href="gallery.html">ガレリー</a></li>
+                    <li><a href="store.html">ストア</a></li>
+                </ul>
+            </nav>
+            <h1 class="artist-name artist-name-large">幾田りら</h1>
+        </header>
+        <section class="content-section container">
+            <div class="gallery-box">
+                <div class="gallery-slide fade">
+                    <div class="slide-number">1 / 4</div>
+                    <img src="Images/Slide 1.jpeg">
+                    <div class="slide-caption">『フェイフェイと月の冒険』</div>
+                </div>
+                <div class="gallery-slide fade">
+                    <div class="slide-number">2 / 4</div>
+                    <img src="Images/Slide 2.jpeg">
+                    <div class="slide-caption">『フェイフェイと月の冒険』</div>
+                </div>
+                <div class="gallery-slide fade">
+                    <div class="slide-number">3 / 4</div>
+                    <img src="Images/Slide 3.jpeg">
+                    <div class="slide-caption">笑</div>
+                </div>
+                <div class="gallery-slide fade">
+                    <div class="slide-number">4 / 4</div>
+                    <img src="Images/Slide 4.jpeg">
+                    <div class="slide-caption">幾田りらニュービジュアル解禁</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <div class="gallery-dots">
+                <span class="gallery-dot" onclick="currentSlide(1)"></span>
+                <span class="gallery-dot" onclick="currentSlide(2)"></span>
+                <span class="gallery-dot" onclick="currentSlide(3)"></span>
+                <span class="gallery-dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+    </body>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="artist-name">幾田りら</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://open.spotify.com/artist/1qM11R4ylJyQiPJ0DffE9z" target="_blank">
+                        <img src='Images/Spotify_icon.png'>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCztEY6czNyJKjRWMwuur9bg" target="_blank">
+                        <img src='Images/Youtube_icon.png'>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ikutalilas" target="_blank">
+                        <img src='Images/Twitter_icon.png'>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lilasikuta/" target="_blank">
+                        <img src='Images/Instagram_icon.png'>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/grow-studio" title="Grow studio">Grow studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+</html>
