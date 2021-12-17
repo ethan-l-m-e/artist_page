@@ -337,6 +337,8 @@ html, body {
 .gallery-box {
     position: relative;
     margin-top: 25px;
+    background-color: black;
+    border-radius: 5px;
 }
 
 .gallery-slide {
@@ -344,6 +346,7 @@ html, body {
 }
 
 .gallery-slide img {
+    display: block;
     width:100%;
     height: calc(100vw / 2);
     object-fit: contain;
@@ -377,7 +380,6 @@ html, body {
     font-size: 2.5em;
     font-weight: bold;
     color: white;
-    background-color: rgba(0, 0, 0, .1);
     padding: .6em;
     transition: 0.6s ease;
     user-select: none;
@@ -389,7 +391,7 @@ html, body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .3);
     border-radius: 5px;
 }
 
