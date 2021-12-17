@@ -119,6 +119,10 @@ html, body {
     height: 70px;
 }
 
+.icon-credits {
+    text-align: right;
+}
+
 .btn {
     text-align: center;
     vertical-align: middle;
@@ -340,9 +344,9 @@ html, body {
 }
 
 .gallery-slide img {
-    width: 100%;
-    height: 639px;
-    object-fit: cover;
+    width:100%;
+    height: calc(100vw / 2);
+    object-fit: contain;
 }
 
 .gallery-dots {
@@ -368,11 +372,12 @@ html, body {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -40px;
     top: 50%;
     font-size: 2.5em;
     font-weight: bold;
     color: white;
+    background-color: rgba(0, 0, 0, .1);
     padding: .6em;
     transition: 0.6s ease;
     user-select: none;
@@ -400,7 +405,7 @@ html, body {
 
 .slide-caption {
     position: absolute;
-    top: 0%;
+    bottom: 0%;
     width: 100%;
     text-align: center;
     padding: .7em;
