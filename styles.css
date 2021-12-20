@@ -95,7 +95,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: rgb(262, 213, 170);
+    background-color: rgb(245, 189, 143);
     color: black;
     padding: .25em 0;
 }
@@ -103,6 +103,8 @@ html, body {
 .main-footer-container {
     display: flex;
     align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .main-footer-container ul {
@@ -182,11 +184,11 @@ html, body {
 }
 
 .release-title {
-    width: 70%;
+    width: 69%;
 }
 
 .release-btn {
-    max-width: 7%;
+    max-width: 8%;
 }
 
 .btn-primary {
