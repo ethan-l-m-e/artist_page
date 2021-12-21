@@ -5,6 +5,15 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    const responsiveNavItems = document.getElementsByClassName('responsive')
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+
+    toggleButton.addEventListener('click', () => {
+        for (var i = 0; i < responsiveNavItems.length; i++) {
+            responsiveNavItems[i].classList.toggle('expanded')
+        }
+    })
+
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]

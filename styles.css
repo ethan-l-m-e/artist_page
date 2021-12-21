@@ -48,6 +48,60 @@ html, body {
     padding: 0 5%;
 }
 
+.toggle-button {
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    top: .75em;
+    left: .75em;
+    width: 24px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-header, .responsive {
+        width: 100%;
+        text-align: start;
+    }
+
+    .main-nav li {
+        padding-left: 0px;
+        margin-left: 7px;
+    }
+
+    .nav-header a, .responsive a {
+        width: 100%;
+    }
+
+    .responsive a {
+        display: none;
+    }
+
+    .responsive.expanded a {
+        display: flex;
+        background-color: none;
+    }
+}
+
 .main-header {
     background-color: rgba(255, 255, 255, .2);
     background-image: url("Images/Header Background.jpeg");
@@ -66,7 +120,7 @@ html, body {
 }
 
 .artist-name-large {
-    font-size: 9em;
+    font-size: 8em;
     margin: 0.1em;
 }
 
@@ -113,12 +167,12 @@ html, body {
 }
 
 .footer-nav li {
-    padding: 0 .3em;
+    padding: 0 .1em;
 }
 
 .footer-nav img {
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
 }
 
 .icon-credits {
