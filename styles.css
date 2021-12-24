@@ -220,6 +220,8 @@ html, body {
 }
 
 .release-row {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     padding-bottom: 1em;
     margin: 1em;
@@ -241,11 +243,7 @@ html, body {
 }
 
 .release-title {
-    width: 67%;
-}
-
-.release-btn {
-    max-width: 8%;
+    width: 69%;
 }
 
 .btn-primary {
