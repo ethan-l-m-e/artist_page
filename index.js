@@ -68,6 +68,10 @@ function playVideo() {
 function onPlayerReady() {
     player.setVolume(50)
     initPlayButton()
+
+    /* For ios safari doesn't work on first play... */
+    playVideo()
+    pauseVideo()
 }
 
 function onPlayerStateChange(event) {
