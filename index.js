@@ -18,6 +18,10 @@ function ready() {
     })
 }
 
+function initPlayButton() {
+    playButton.classList.add('player-ready')
+}
+
 /* Toggle material icons play and pause */
 function setPlayButton() {
     playButton.parentElement.classList.toggle('playing')
@@ -63,6 +67,7 @@ function playVideo() {
 
 function onPlayerReady() {
     player.setVolume(50)
+    initPlayButton()
 }
 
 function onPlayerStateChange(event) {

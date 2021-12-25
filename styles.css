@@ -214,7 +214,7 @@ html, body {
 }
 
 .btn-play {
-    display: block;
+    display: none;
     border-radius: 50%;
     width: 112px;
     height: 112px;
@@ -224,6 +224,11 @@ html, body {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+}
+
+/* Only show once youtube video has loaded */
+.btn-play.player-ready {
+    display: block;
 }
 
 .btn-header:hover, .btn-play:hover {
