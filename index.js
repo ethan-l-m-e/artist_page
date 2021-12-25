@@ -5,11 +5,13 @@ if (document.readyState == 'loading') {
 }
 
 var playButton
+var playerStatus
 
 function ready() {
     const responsiveNavItems = document.getElementsByClassName('responsive')
     const toggleButton = document.getElementsByClassName('toggle-button')[0]
     playButton = document.getElementsByClassName('btn-play')[0]
+    playerStatus = playButton.parentElement.getElementsByClassName('player-status')[0]
 
     toggleButton.addEventListener('click', () => {
         for (var i = 0; i < responsiveNavItems.length; i++) {
@@ -36,10 +38,10 @@ function setPauseButton() {
 /* Do on play button click */
 function togglePlayPause() {
     if (playButton.parentElement.classList.contains('playing')) {
-        setPlayButton()
+        //setPlayButton() //--> moved down to onPlayerStateChange()
         pauseVideo()
     } else {
-        setPauseButton()
+        //setPauseButton() //--> moved down to onPlayerStateChange()
         playVideo()
     }
 }
@@ -47,8 +49,8 @@ function togglePlayPause() {
 /* Youtube API functions */
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '0',
-        width: '0',
+        height: '320',
+        width: '640',
         videoId: '62W93dO8FPk',
         events: {
             'onReady': onPlayerReady,
@@ -71,7 +73,19 @@ function onPlayerReady() {
 }
 
 function onPlayerStateChange(event) {
+    console.log(event.data)
     if (event.data == YT.PlayerState.ENDED) {
         setPlayButton()
+    }
+    else if (event.data == YT.PlayerState.PLAYING) {
+        playerStatus.innerText = '再生中'
+        if (!playButton.parentElement.classList.contains('playing')) {
+            setPauseButton()
+        }
+    } else {
+        playerStatus.innerText = '停止'
+        if (playButton.parentElement.classList.contains('playing')) {
+            setPlayButton()
+        }
     }
 }
