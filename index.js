@@ -66,7 +66,7 @@ function playVideo() {
 }
 
 function onPlayerReady() {
-    player.setVolume(50)
+    player.setVolume(35)
     initPlayButton()
 }
 
