@@ -54,10 +54,18 @@ html, body {
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    top: .75em;
-    left: 15px;
-    width: 30px;
-    height: 20px;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 50%;
+    
+}
+
+.toggle-button:active {
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .toggle-button .bar {
@@ -84,7 +92,7 @@ html, body {
     }
 
     .main-nav ul {
-        padding-left: 60px;
+        padding-left: 46px;
     }
 
     .main-nav li {
@@ -95,12 +103,16 @@ html, body {
         width: 100%;
     }
 
-    .responsive a {
-        display: none;
+    .responsive {
+        /*display: none;*/
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
     }
 
-    .responsive.expanded a {
-        display: flex;
+    .responsive.expanded {
+        /*display: flex;*/
+        max-height: 45px;
         background-color: none;
     }
 }
@@ -206,7 +218,6 @@ html, body {
     border-radius: 50%;
     width: 112px;
     height: 112px;
-    margin: 0 auto;
     font-size: 7em;
     color: white;
     background-color: rgba(255, 255, 255, .1);
@@ -217,6 +228,69 @@ html, body {
 
 .btn-header:hover, .btn-play:hover {
     background-color: rgba(255, 255, 255, .3);
+}
+
+.play-unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-unit.playing .player-info {
+    max-width: 120px;
+}
+
+.player-info {
+    max-width: 0;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: max-width .9s;
+}
+
+.player-info div {
+    color: white;
+    border-top: none;
+    font-weight: lighter;
+    font-size: 1.1em;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+.player-info div:last-child {
+    border-top: 1px solid white;
+}
+
+.player-info div:first-child {
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: flash;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+    20% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
 
 .release-row {
