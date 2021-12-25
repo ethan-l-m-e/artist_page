@@ -1,9 +1,10 @@
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
-    var slideIndex = 1
     ready()
 }
+
+var slideIndex
 
 function ready() {
     const responsiveNavItems = document.getElementsByClassName('responsive')
@@ -15,6 +16,7 @@ function ready() {
         }
     })
 
+    slideIndex = 1
     showSlides(slideIndex)
 }
 
