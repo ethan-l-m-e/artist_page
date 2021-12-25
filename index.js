@@ -49,8 +49,8 @@ function togglePlayPause() {
 /* Youtube API functions */
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '320',
-        width: '640',
+        height: '0',
+        width: '0',
         videoId: '62W93dO8FPk',
         events: {
             'onReady': onPlayerReady,
@@ -73,7 +73,6 @@ function onPlayerReady() {
 }
 
 function onPlayerStateChange(event) {
-    console.log(event.data)
     if (event.data == YT.PlayerState.ENDED) {
         setPlayButton()
     }
