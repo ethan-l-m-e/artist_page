@@ -73,18 +73,16 @@ function onPlayerReady() {
 }
 
 function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.ENDED) {
-        setPlayButton()
-    }
-    else if (event.data == YT.PlayerState.PLAYING) {
+    if (event.data == YT.PlayerState.PLAYING) {
         playerStatus.innerText = '再生中'
         if (!playButton.parentElement.classList.contains('playing')) {
             setPauseButton()
         }
-    } else {
-        playerStatus.innerText = '停止'
-        if (playButton.parentElement.classList.contains('playing')) {
-            setPlayButton()
-        }
+        return
     }
+
+    playerStatus.innerText = '一時停止'
+    if (playButton.parentElement.classList.contains('playing')) {
+        setPlayButton()
+    } 
 }
