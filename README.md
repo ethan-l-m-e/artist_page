@@ -7,7 +7,7 @@ https://ethan-l-m-e.github.io/artist_page/index.html
 3. Animations
 4. Play Functionality
 
-### Original website design
+### Original website source:
 https://github.com/WebDevSimplified/Introduction-to-Web-Development
   
 #### Containing:
