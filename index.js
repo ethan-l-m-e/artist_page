@@ -27,12 +27,12 @@ function initPlayButton() {
 /* Toggle material icons play and pause */
 function setPlayButton() {
     playButton.parentElement.classList.toggle('playing')
-    playButton.innerText = 'play_circle_outline'
+    playButton.src = 'Images/Play Circle.svg'
 }
 
 function setPauseButton() {
     playButton.parentElement.classList.toggle('playing')
-    playButton.innerText = 'pause_circle_outline'
+    playButton.src = 'Images/Pause Circle.svg'
 }
 
 /* Do on play button click */
