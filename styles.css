@@ -209,6 +209,7 @@ html, body {
 
 .link a {
     font-weight: normal;
+    word-break: break-word;
 }
 
 .main-footer {
