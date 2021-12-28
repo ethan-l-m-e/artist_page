@@ -28,7 +28,7 @@ async function doWork() {
         console.log("Response Received From YouTube")
         const processedResponse = await processRequest(response)
         console.log("Response Processed To Json")
-        retrieveData(processedResponse)
+        useData(processedResponse)
     } catch (err) {
         console.log(err)
     }
@@ -38,9 +38,10 @@ function processRequest(response) {
     return response.json()
 }
 
-function retrieveData(data) {
+function useData(data) {
     const dataItems = data.items[0]
     youtubeDescription.innerText = dataItems.snippet.description
     youtubeProfilePicture.src = dataItems.snippet.thumbnails.high.url
     youtubeProfilePicture.style.height = 200 + 'px'
+    youtubeProfilePicture.style.margin = 15 + 'px'
 }
