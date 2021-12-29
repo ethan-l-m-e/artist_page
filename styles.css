@@ -618,8 +618,7 @@ html, body {
 }
 
 .twitter-timeline-container {
-    margin: 50px 0;
-    padding: 30px 30px 50px 30px;
+    padding: 3% 3% 5% 3%;
     border-radius: 7px;
     background-image: linear-gradient(to top right, black, #555);
 }

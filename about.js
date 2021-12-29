@@ -1,3 +1,5 @@
+const apiRequestUrl = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UCztEY6czNyJKjRWMwuur9bg&key=AIzaSyD1t8JMVF948JWv5U5FI80JTQRXOavUhME'
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -24,13 +26,11 @@ function ready() {
 
 async function doWork() {
     try {
-        const response = await fetch('https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=UCztEY6czNyJKjRWMwuur9bg&key=AIzaSyD1t8JMVF948JWv5U5FI80JTQRXOavUhME')
-        console.log("Response Received From YouTube")
+        const response = await fetch(apiRequestUrl)
         const processedResponse = await processRequest(response)
-        console.log("Response Processed To Json")
         useData(processedResponse)
     } catch (err) {
-        console.log(err)
+        console.log('ERROR')
     }
 }
 
