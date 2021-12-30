@@ -33,6 +33,7 @@ function toggleOverlay() {
     }
 }
 
+/* Used to cut off audio by replacing iframe element */
 function setIframe() {
     overlayFrame.parentElement.innerHTML = `<button class="btn btn-danger exit-frame-button" onclick="toggleOverlay()" role="button">&#x2715</button>
     <iframe class="target-frame" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>`
