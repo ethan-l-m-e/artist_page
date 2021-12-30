@@ -11,6 +11,10 @@
         <script src="https://www.youtube.com/iframe_api"></script>
     </head>
     <body>
+        <div class="target-frame-container">
+            <button class="btn btn-danger exit-frame-button" onclick="toggleOverlay()" role="button">&#x2715</button>
+            <iframe class="target-frame" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+        </div>
         <header class="main-header">
             <nav class="nav main-nav">
                 <div class="toggle-button">
@@ -45,36 +49,36 @@
                 <div class="release-row">
                     <span class="release-item release-date">2021年12月17日（金）</span>
                     <span class="release-item release-title">「milet×Aimer×幾田りら - おもかげ (produced by Vaundy) / THE FIRST TAKE」</span>
-                    <a href="https://lnk.to/omokage" target="_blank">
-                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
+                    <a href="https://lnk.to/omokage" target="targetframe">
+                        <button class="btn release-item release-btn btn-primary" type="button" onclick="toggleOverlay()">聴く</button>
                     </a>
                 </div>
                 <div class="release-row">
                     <span class="release-item release-date">2021年12月1日（水）</span>
                     <span class="release-item release-title">「0X1=LOVESONG (I Know I Love You) feat. 幾田りら [Japanese Ver.]」</span>
-                    <a href="https://txt.lnk.to/chaoticID" target="_blank">
-                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
+                    <a href="https://txt.lnk.to/chaoticID" target="targetframe">
+                        <button class="btn release-item release-btn btn-primary" type="button" onclick="toggleOverlay()">聴く</button>
                     </a>
                 </div>
                 <div class="release-row">
                     <span class="release-item release-date">2021年8月14日（土）</span>
                     <span class="release-item release-title">「ロマンスの約束」リアレンジVer.</span>
-                    <a href="https://orcd.co/romance_no_yakusoku" target="_blank">
-                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
+                    <a href="https://orcd.co/romance_no_yakusoku" target="targetframe">
+                        <button class="btn release-item release-btn btn-primary" type="button" onclick="toggleOverlay()">聴く</button>
                     </a>
                 </div>
                 <div class="release-row">
                     <span class="release-item release-date">2021年7月14日（水）</span>
                     <span class="release-item release-title">「SWEET MEMORIES」</span>
-                    <a href="https://t.co/3I73Q0hzPx" target="_blank">
-                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
+                    <a href="https://orcd.co/sweetmemories" target="targetframe">
+                        <button class="btn release-item release-btn btn-primary" type="button" onclick="toggleOverlay()">聴く</button>
                     </a>
                 </div>
                 <div class="release-row">
                     <span class="release-item release-date">2021年3月9日（火）</span>
                     <span class="release-item release-title">「Answer」</span>
-                    <a href="https://orcd.co/answer" target="_blank">
-                        <button class="btn release-item release-btn btn-primary" type="button">聴く</button>
+                    <a href="https://orcd.co/answer" target="targetframe">
+                        <button class="btn release-item release-btn btn-primary" type="button" onclick="toggleOverlay()">聴く</button>
                     </a>
                 </div>
             </div>

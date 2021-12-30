@@ -248,6 +248,8 @@ html, body {
     vertical-align: middle;
     padding: .67em;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .btn-header {
@@ -269,8 +271,6 @@ html, body {
     height: 112px;
     background-color: rgba(255, 255, 255, .1);
     cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 /* Only show once youtube video has loaded */
@@ -622,4 +622,40 @@ html, body {
     padding: 3% 3% 5% 3%;
     border-radius: 7px;
     background-image: linear-gradient(to top right, black, #555);
+}
+
+.target-frame {
+    width: 370px;
+    height: 100%;
+    display: none;
+    margin: 0 auto;
+}
+
+.target-frame-container {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.target-frame.overlay-active {
+    display: block;
+}
+
+.target-frame-container.overlay-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exit-frame-button {
+    width: 370px;
+    
+}
+
+.unscrollable {
+    height: 90%;
+    overflow: hidden;
 }

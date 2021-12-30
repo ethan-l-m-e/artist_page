@@ -4,12 +4,15 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+var overlayFrame
 var playButton
 var playerStatus
 
 function ready() {
     const responsiveNavItems = document.getElementsByClassName('responsive')
     const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    
+    
     playButton = document.getElementsByClassName('btn-play')[0]
     playerStatus = playButton.parentElement.getElementsByClassName('player-status')[0]
 
@@ -18,6 +21,21 @@ function ready() {
             responsiveNavItems[i].classList.toggle('expanded')
         }
     })
+}
+
+function toggleOverlay() {
+    overlayFrame = document.getElementsByClassName('target-frame')[0]
+    overlayFrame.classList.toggle('overlay-active')
+    overlayFrame.parentElement.classList.toggle('overlay-active')
+    document.body.classList.toggle('unscrollable')
+    if (!overlayFrame.classList.contains('overlay-active')) {
+        setIframe()
+    }
+}
+
+function setIframe() {
+    overlayFrame.parentElement.innerHTML = `<button class="btn btn-danger exit-frame-button" onclick="toggleOverlay()" role="button">&#x2715</button>
+    <iframe class="target-frame" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>`
 }
 
 function initPlayButton() {
