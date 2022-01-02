@@ -7,6 +7,16 @@
     font-style: normal;
 }
 
+:root {
+    --btn-bg-color: rgba(255, 255, 255, .1);
+    --btn-highlight-color: rgba(255, 255, 255, .3);
+    --btn-primary-pink: #ed56f2;
+    --btn-primary-pink-hover: #be2ddb;
+    --btn-danger-red: #EB5757;
+    --btn-danger-red-hover: #CC4C4C;
+    --footer-bg-color: rgb(245, 189, 143);
+}
+
 * {
     box-sizing: border-box;
     font-family: Raleway;
@@ -34,14 +44,14 @@ html, body {
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: var(--btn-highlight-color);
 }
 
 .main-nav {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid var(--btn-highlight-color);
 }
 
 .main-nav li {
@@ -60,12 +70,11 @@ html, body {
     height: 36px;
     padding: 9px;
     margin: 5px;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 
 .toggle-button:active {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: var(--btn-highlight-color);
 }
 
 .toggle-button .bar {
@@ -204,7 +213,7 @@ html, body {
 .link {
     margin: .5em 0;
     font-weight: bolder;
-    color: #444;
+    color: black;
 }
 
 .link a {
@@ -213,7 +222,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: rgb(245, 189, 143);
+    background-color: var(--footer-bg-color);
     color: black;
     padding: .25em 0;
 }
@@ -256,7 +265,7 @@ html, body {
     margin: .5em 15% 2em 15%;
     color: white;
     border: 2px solid white;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: var(--btn-bg-color);
     border-radius: .3em;
     font-size: 1.5em;
     font-weight: lighter;
@@ -269,7 +278,7 @@ html, body {
     border-radius: 50%;
     width: 112px;
     height: 112px;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: var(--btn-bg-color);
     cursor: pointer;
 }
 
@@ -374,14 +383,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #ed56f2;
+    background-color: var(--btn-primary-pink);
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #be2ddb;
+    background-color: var(--btn-primary-pink-hover);
 }
 
 .shop-item {
@@ -465,21 +474,21 @@ html, body {
 
 .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: var(--btn-danger-red);
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: var(--btn-danger-red-hover);
 }
 
 .cart-quantity-input {
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #ed56f2;
+    border: 1px solid var(--btn-primary-pink);
     background-color: #eee;
     color: #333;
     padding: 0;
@@ -568,6 +577,8 @@ html, body {
     color: white;
     padding: .6em;
     transition: 0.6s ease;
+    border-radius: 5px;
+    background-color: var(--btn-bg-color);
     user-select: none;
     -webkit-user-select: none;
 }
@@ -577,8 +588,7 @@ html, body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, .3);
-    border-radius: 5px;
+    background-color: var(--btn-highlight-color);
 }
 
 .slide-number {
@@ -586,7 +596,7 @@ html, body {
     top: 0%;
     right: 0%;
     padding: .7em;
-    color: rgba(255, 255, 255, .7);
+    color: white;
     user-select: none;
     -webkit-user-select: none;
 }
