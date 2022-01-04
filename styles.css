@@ -28,6 +28,13 @@ html, body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
 .nav ul {
     margin: 0;
 }
@@ -156,6 +163,7 @@ html, body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+    width: 100%;
 }
 
 .section-header {
